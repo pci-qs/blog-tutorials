@@ -22,4 +22,4 @@ jobs:
         with:
           java-version: ${{ matrix.versions }}
       - name: Build all projects with Maven
-        run: ./buildJdk${{ matrix.versions }}Projects.sh
+        run: mvn -f github-actions-java-maven/pom.xml clean verify
