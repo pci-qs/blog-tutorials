@@ -1,5 +1,6 @@
 name: Build Maven Projects
 on: [push, pull_request]
+
 jobs:
   build:
     strategy:
